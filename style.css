@@ -1,0 +1,37 @@
+/* Smooth scroll pour les ancres */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C68B3C;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A6722E;
+}
+
+/* Animation fade-in pour les sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Décalage pour éviter que le header fixe cache les ancres */
+section[id] {
+  scroll-margin-top: 80px;
+}
