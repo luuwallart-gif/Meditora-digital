@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meditora Digital — Agence de marketing digital | Sud de la France</title>
+  <meta name="description" content="Meditora Digital, agence de marketing digital basée à Villeneuve-lez-Avignon. SEO, sites vitrines, réseaux sociaux, PLV. Vos ambitions digitales, notre signature provençale." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts : Fraunces (titres) + Inter (texte) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icônes Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Notre CSS custom -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Configuration Tailwind avec nos couleurs Provence -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocre: '#C68B3C',
+            'ocre-dark': '#A6722E',
+            lavande: '#7C6A9B',
+            terracotta: '#B85C3C',
+            cream: '#FAF6F0',
+            anthracite: '#2D2A26',
+            olive: '#8B9474',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-anthracite font-sans antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-ocre/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-ocre to-terracotta flex items-center justify-center text-cream font-display font-bold text-lg">M</div>
+        <span class="font-display text-xl font-semibold text-anthracite">Meditora <span class="text-ocre">Digital</span></span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#apropos" class="hover:text-ocre transition">À propos</a></li>
+        <li><a href="#services" class="hover:text-ocre transition">Services</a></li>
+        <li><a href="#philosophie" class="hover:text-ocre transition">IA & Humain</a></li>
+        <li><a href="#portfolio" class="hover:text-ocre transition">Réalisations</a></li>
+        <li><a href="#tarifs" class="hover:text-ocre transition">Tarifs</a></li>
+        <li><a href="#contact" class="hover:text-ocre transition">Contact</a></li>
+      </ul>
+      <a href="#devis" class="hidden md:inline-block px-5 py-2.5 bg-ocre hover:bg-ocre-dark text-cream rounded-full text-sm font-semibold transition shadow-md hover:shadow-lg">Demander un devis</a>
+      <button id="menu-btn" class="md:hidden text-anthracite"><i data-lucide="menu"></i></button>
+    </nav>
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-ocre/10 px-6 py-4 space-y-3">
+      <a href="#apropos" class="block hover:text-ocre">À propos</a>
+      <a href="#services" class="block hover:text-ocre">Services</a>
+      <a href="#philosophie" class="block hover:text-ocre">IA & Humain</a>
+      <a href="#portfolio" class="block hover:text-ocre">Réalisations</a>
+      <a href="#tarifs" class="block hover:text-ocre">Tarifs</a>
+      <a href="#contact" class="block hover:text-ocre">Contact</a>
+      <a href="#devis" class="block bg-ocre text-cream px-4 py-2 rounded-full text-center font-semibold">Demander un devis</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative pt-32 pb-24 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-cream via-cream to-ocre/5"></div>
+    <div class="absolute top-20 right-10 w-72 h-72 bg-lavande/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-ocre/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-5xl mx-auto text-center">
+      <span class="inline-block px-4 py-1.5 bg-ocre/10 text-ocre rounded-full text-sm font-medium mb-6">
+        ☀️ Agence de marketing digital • Sud de la France
+      </span>
+      <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+        Vos ambitions digitales,<br/>
+        <span class="text-ocre italic">notre signature provençale.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-anthracite/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Chez Meditora Digital, nous accompagnons les TPE et PME du Sud avec une approche qui marie la puissance de l'IA et la chaleur de l'humain.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#devis" class="px-8 py-4 bg-ocre hover:bg-ocre-dark text-cream rounded-full font-semibold transition shadow-lg hover:shadow-xl">
+          Demander un devis gratuit
+        </a>
+        <a href="#services" class="px-8 py-4 bg-cream border-2 border-anthracite/20 hover:border-ocre text-anthracite rounded-full font-semibold transition">
+          Découvrir nos services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ À PROPOS ============ -->
+  <section id="apropos" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Notre histoire</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-6">Le digital, avec l'accent du Sud.</h2>
+        <p class="text-anthracite/70 leading-relaxed mb-4">
+          Meditora Digital est née d'une conviction simple : <strong>le marketing digital ne doit jamais perdre son âme</strong>. Dans un monde saturé d'automatisations froides, nous remettons l'humain au centre.
+        </p>
+        <p class="text-anthracite/70 leading-relaxed">
+          Implantés à Villeneuve-lez-Avignon, nous accompagnons les entrepreneurs du Sud avec une approche directe, transparente et réactive. Pas de jargon, pas de promesses creuses : juste des résultats concrets.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-cream p-6 rounded-2xl border border-ocre/10">
+          <i data-lucide="zap" class="text-ocre w-8 h-8 mb-3"></i>
+          <h3 class="font-display font-semibold text-lg mb-1">Réactivité</h3>
+          <p class="text-sm text-anthracite/60">Réponse en moins de 24h</p>
+        </div>
+        <div class="bg-cream p-6 rounded-2xl border border-lavande/20">
+          <i data-lucide="heart-handshake" class="text-lavande w-8 h-8 mb-3"></i>
+          <h3 class="font-display font-semibold text-lg mb-1">Humain</h3>
+          <p class="text-sm text-anthracite/60">Une relation, pas un contrat</p>
+        </div>
+        <div class="bg-cream p-6 rounded-2xl border border-terracotta/20">
+          <i data-lucide="sparkles" class="text-terracotta w-8 h-8 mb-3"></i>
+          <h3 class="font-display font-semibold text-lg mb-1">Innovation</h3>
+          <p class="text-sm text-anthracite/60">IA au service du résultat</p>
+        </div>
+        <div class="bg-cream p-6 rounded-2xl border border-olive/20">
+          <i data-lucide="map-pin" class="text-olive w-8 h-8 mb-3"></i>
+          <h3 class="font-display font-semibold text-lg mb-1">Local</h3>
+          <p class="text-sm text-anthracite/60">Ancré dans le Sud</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Nos services</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Tout ce qu'il vous faut pour briller en ligne</h2>
+        <p class="text-anthracite/70 max-w-2xl mx-auto">Quatre expertises complémentaires pour une stratégie digitale complète et cohérente.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-8 rounded-2xl border border-ocre/10 hover:border-ocre hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-ocre/10 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="search" class="text-ocre w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Optimisation SEO</h3>
+          <p class="text-anthracite/70 text-sm leading-relaxed">Soyez trouvé par vos clients sur Google grâce à une stratégie de référencement durable et locale.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-lavande/20 hover:border-lavande hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-lavande/10 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="layout" class="text-lavande w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Sites vitrines</h3>
+          <p class="text-anthracite/70 text-sm leading-relaxed">Des sites élégants, rapides et adaptés à votre image, conçus pour convertir vos visiteurs en clients.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-terracotta/20 hover:border-terracotta hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-terracotta/10 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="instagram" class="text-terracotta w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">Réseaux sociaux</h3>
+          <p class="text-anthracite/70 text-sm leading-relaxed">Gestion de vos communautés, création de contenus engageants et stratégie éditoriale sur mesure.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-olive/20 hover:border-olive hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl">
+          <div class="w-14 h-14 bg-olive/10 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="shopping-bag" class="text-olive w-7 h-7"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-3">PLV & outils de vente</h3>
+          <p class="text-anthracite/70 text-sm leading-relaxed">Création de supports de communication et d'outils d'aide à la vente pour booster votre business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IA & HUMAIN ============ -->
+  <section id="philosophie" class="py-24 px-6 bg-gradient-to-br from-anthracite to-anthracite/95 text-cream relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-ocre/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-lavande/20 rounded-full blur-3xl"></div>
+    <div class="relative max-w-5xl mx-auto text-center">
+      <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Notre philosophie</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-6">L'IA puissante. L'humain essentiel.</h2>
+      <p class="text-cream/70 text-lg max-w-3xl mx-auto leading-relaxed mb-12">
+        Nous utilisons l'intelligence artificielle là où elle excelle : l'analyse, la vitesse, l'optimisation. Mais quand il s'agit de comprendre vos clients, de raconter votre histoire et de créer du lien — c'est l'humain qui parle.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div>
+          <div class="w-16 h-16 bg-ocre/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brain-circuit" class="text-ocre w-8 h-8"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-2">IA pour la performance</h3>
+          <p class="text-cream/60 text-sm">Analyse de données, automatisations intelligentes, optimisation continue.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-lavande/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="text-lavande w-8 h-8"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-2">Humain pour la relation</h3>
+          <p class="text-cream/60 text-sm">Échanges directs, conseils sur mesure, accompagnement personnalisé.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-terracotta/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="message-circle" class="text-terracotta w-8 h-8"></i>
+          </div>
+          <h3 class="font-display text-xl font-semibold mb-2">Contact clair et rapide</h3>
+          <p class="text-cream/60 text-sm">Pas d'intermédiaire, pas de blabla. On vous répond, on agit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Réalisations</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Quelques projets dont nous sommes fiers</h2>
+        <p class="text-anthracite/70 max-w-2xl mx-auto">Découvrez comment nous avons aidé des entreprises du Sud à rayonner en ligne.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="group cursor-pointer">
+          <div class="aspect-[4/3] bg-gradient-to-br from-ocre/30 to-terracotta/30 rounded-2xl mb-4 overflow-hidden flex items-center justify-center">
+            <i data-lucide="image" class="text-ocre/40 w-16 h-16"></i>
+          </div>
+          <h3 class="font-display text-lg font-semibold group-hover:text-ocre transition">Domaine viticole — Site & SEO</h3>
+          <p class="text-sm text-anthracite/60 mt-1">Refonte complète & stratégie locale</p>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="aspect-[4/3] bg-gradient-to-br from-lavande/30 to-ocre/30 rounded-2xl mb-4 overflow-hidden flex items-center justify-center">
+            <i data-lucide="image" class="text-lavande/40 w-16 h-16"></i>
+          </div>
+          <h3 class="font-display text-lg font-semibold group-hover:text-ocre transition">Restaurant provençal — Instagram</h3>
+          <p class="text-sm text-anthracite/60 mt-1">+250% d'engagement en 3 mois</p>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="aspect-[4/3] bg-gradient-to-br from-olive/30 to-lavande/30 rounded-2xl mb-4 overflow-hidden flex items-center justify-center">
+            <i data-lucide="image" class="text-olive/40 w-16 h-16"></i>
+          </div>
+          <h3 class="font-display text-lg font-semibold group-hover:text-ocre transition">Artisan d'art — PLV & site</h3>
+          <p class="text-sm text-anthracite/60 mt-1">Identité visuelle & supports complets</p>
+        </div>
+      </div>
+      <p class="text-center text-sm text-anthracite/50 mt-10 italic">* Exemples illustratifs — vos vraies réalisations seront ajoutées prochainement.</p>
+    </div>
+  </section>
+
+  <!-- ============ TARIFS ============ -->
+  <section id="tarifs" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Nos formules</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Des offres claires, sans surprise</h2>
+        <p class="text-anthracite/70 max-w-2xl mx-auto">Trois formules pensées pour s'adapter à vos ambitions. Devis personnalisé garanti.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Essentiel -->
+        <div class="bg-cream p-8 rounded-3xl border-2 border-transparent hover:border-ocre/30 transition">
+          <h3 class="font-display text-2xl font-bold mb-2">Essentiel</h3>
+          <p class="text-sm text-anthracite/60 mb-6">Pour démarrer sereinement</p>
+          <div class="mb-6">
+            <span class="text-4xl font-display font-bold text-ocre">À partir de 890€</span>
+          </div>
+          <ul class="space-y-3 text-sm mb-8">
+            <li class="flex gap-2"><i data-lucide="check" class="text-ocre w-5 h-5 flex-shrink-0"></i>Site vitrine 3 pages</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-ocre w-5 h-5 flex-shrink-0"></i>Référencement de base</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-ocre w-5 h-5 flex-shrink-0"></i>Formulaire de contact</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-ocre w-5 h-5 flex-shrink-0"></i>Responsive mobile</li>
+          </ul>
+          <a href="#devis" class="block text-center py-3 border-2 border-ocre text-ocre hover:bg-ocre hover:text-cream rounded-full font-semibold transition">Demander un devis</a>
+        </div>
+        <!-- Croissance -->
+        <div class="bg-gradient-to-br from-ocre to-terracotta p-8 rounded-3xl text-cream relative shadow-2xl scale-105">
+          <span class="absolute top-4 right-4 bg-cream text-ocre text-xs font-bold px-3 py-1 rounded-full">POPULAIRE</span>
+          <h3 class="font-display text-2xl font-bold mb-2">Croissance</h3>
+          <p class="text-sm text-cream/80 mb-6">Pour passer à la vitesse supérieure</p>
+          <div class="mb-6">
+            <span class="text-4xl font-display font-bold">À partir de 1 890€</span>
+          </div>
+          <ul class="space-y-3 text-sm mb-8">
+            <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i>Site vitrine jusqu'à 8 pages</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i>SEO avancé & local</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i>Gestion réseaux sociaux (1 mois)</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i>Identité visuelle de base</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 flex-shrink-0"></i>Support prioritaire</li>
+          </ul>
+          <a href="#devis" class="block text-center py-3 bg-cream text-ocre hover:bg-anthracite hover:text-cream rounded-full font-semibold transition">Demander un devis</a>
+        </div>
+        <!-- Sur-mesure -->
+        <div class="bg-cream p-8 rounded-3xl border-2 border-transparent hover:border-lavande/30 transition">
+          <h3 class="font-display text-2xl font-bold mb-2">Sur-mesure</h3>
+          <p class="text-sm text-anthracite/60 mb-6">Pour des projets ambitieux</p>
+          <div class="mb-6">
+            <span class="text-4xl font-display font-bold text-lavande">Sur devis</span>
+          </div>
+          <ul class="space-y-3 text-sm mb-8">
+            <li class="flex gap-2"><i data-lucide="check" class="text-lavande w-5 h-5 flex-shrink-0"></i>Stratégie digitale complète</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-lavande w-5 h-5 flex-shrink-0"></i>Gestion réseaux sociaux long terme</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-lavande w-5 h-5 flex-shrink-0"></i>PLV & outils de vente</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-lavande w-5 h-5 flex-shrink-0"></i>Accompagnement dédié</li>
+            <li class="flex gap-2"><i data-lucide="check" class="text-lavande w-5 h-5 flex-shrink-0"></i>Reporting mensuel</li>
+          </ul>
+          <a href="#devis" class="block text-center py-3 border-2 border-lavande text-lavande hover:bg-lavande hover:text-cream rounded-full font-semibold transition">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TÉMOIGNAGES ============ -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Témoignages</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Ce qu'ils en disent</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="flex gap-1 text-ocre mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-anthracite/70 italic mb-6">"Une équipe à l'écoute, des résultats concrets, et un vrai contact humain. Exactement ce qu'on cherchait."</p>
+          <div class="font-display font-semibold">Sophie M.</div>
+          <div class="text-sm text-anthracite/50">Restauratrice, Avignon</div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="flex gap-1 text-ocre mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-anthracite/70 italic mb-6">"Réactivité au top, et un site qui m'a apporté de vrais clients dès le premier mois. Bravo !"</p>
+          <div class="font-display font-semibold">Julien P.</div>
+          <div class="text-sm text-anthracite/50">Artisan, Nîmes</div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="flex gap-1 text-ocre mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-anthracite/70 italic mb-6">"Une approche moderne sans perdre l'humain. C'est rare, et c'est précieux."</p>
+          <div class="font-display font-semibold">Camille R.</div>
+          <div class="text-sm text-anthracite/50">Domaine viticole, Gard</div>
+        </div>
+      </div>
+      <p class="text-center text-sm text-anthracite/50 mt-10 italic">* Témoignages illustratifs — vos vrais avis clients seront ajoutés prochainement.</p>
+    </div>
+  </section>
+
+  <!-- ============ DEVIS ============ -->
+  <section id="devis" class="py-24 px-6 bg-gradient-to-br from-ocre/5 to-lavande/5">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Demande de devis</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Parlons de votre projet ☀️</h2>
+        <p class="text-anthracite/70">Réponse personnalisée en moins de 24h. Sans engagement.</p>
+      </div>
+      <!-- ⚠️ IMPORTANT : pour activer le formulaire, crée un compte gratuit sur formspree.io et remplace YOUR_FORM_ID -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white p-8 md:p-10 rounded-3xl shadow-xl space-y-5">
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Nom complet *</label>
+            <input type="text" name="nom" required class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Entreprise</label>
+            <input type="text" name="entreprise" class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition" />
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Email *</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Téléphone</label>
+            <input type="tel" name="telephone" class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Service souhaité *</label>
+          <select name="service" required class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition bg-white">
+            <option value="">— Sélectionnez —</option>
+            <option>Création de site vitrine</option>
+            <option>Optimisation SEO</option>
+            <option>Gestion réseaux sociaux</option>
+            <option>PLV & outils de vente</option>
+            <option>Pack complet / Sur-mesure</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Votre projet en quelques mots *</label>
+          <textarea name="message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-anthracite/10 focus:border-ocre focus:outline-none transition"></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 bg-ocre hover:bg-ocre-dark text-cream rounded-full font-semibold transition shadow-lg hover:shadow-xl">
+          Envoyer ma demande
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-24 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-ocre font-semibold uppercase tracking-wider text-sm">Contact</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mt-3 mb-4">Restons en contact</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="mailto:luuwallart@gmail.com" class="bg-cream p-8 rounded-2xl text-center hover:-translate-y-1 transition">
+          <div class="w-14 h-14 bg-ocre/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="mail" class="text-ocre w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Email</h3>
+          <p class="text-sm text-anthracite/70">luuwallart@gmail.com</p>
+        </a>
+        <a href="tel:+33634098223" class="bg-cream p-8 rounded-2xl text-center hover:-translate-y-1 transition">
+          <div class="w-14 h-14 bg-lavande/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="phone" class="text-lavande w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Téléphone</h3>
+          <p class="text-sm text-anthracite/70">06 34 09 82 23</p>
+        </a>
+        <div class="bg-cream p-8 rounded-2xl text-center">
+          <div class="w-14 h-14 bg-terracotta/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="map-pin" class="text-terracotta w-7 h-7"></i>
+          </div>
+          <h3 class="font-display font-semibold mb-2">Localisation</h3>
+          <p class="text-sm text-anthracite/70">Villeneuve-lez-Avignon<br/>Sud de la France</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-anthracite text-cream py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-ocre to-terracotta flex items-center justify-center text-cream font-display font-bold text-lg">M</div>
+          <span class="font-display text-xl font-semibold">Meditora <span class="text-ocre">Digital</span></span>
+        </div>
+        <p class="text-cream/60 text-sm leading-relaxed">Vos ambitions digitales, notre signature provençale.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#services" class="hover:text-ocre">Services</a></li>
+          <li><a href="#tarifs" class="hover:text-ocre">Tarifs</a></li>
+          <li><a href="#portfolio" class="hover:text-ocre">Réalisations</a></li>
+          <li><a href="#devis" class="hover:text-ocre">Devis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-semibold mb-4">Suivez-nous</h4>
+        <div class="flex gap-3">
+          <a href="#" class="w-10 h-10 bg-cream/10 hover:bg-ocre rounded-full flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+          <a href="#" class="w-10 h-10 bg-cream/10 hover:bg-ocre rounded-full flex items-center justify-center transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+          <a href="#" class="w-10 h-10 bg-cream/10 hover:bg-ocre rounded-full flex items-center justify-center transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cream/10 pt-6 text-center text-sm text-cream/40">
+      © 2025 Meditora Digital — Tous droits réservés.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
