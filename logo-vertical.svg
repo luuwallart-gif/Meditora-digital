@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <defs>
+    <linearGradient id="leafGradientV" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8C8A8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8B8E0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Feuille stylisée centrée -->
+  <g transform="translate(70, 20)">
+    <path d="M30 5 Q5 30 12 55 Q18 62 30 58 Q55 55 55 25 Q48 5 30 5 Z" 
+          fill="url(#leafGradientV)" />
+    <path d="M30 10 Q26 30 22 55" 
+          stroke="#4A5D4A" stroke-width="2" fill="none" opacity="0.6"/>
+    <!-- Point digital -->
+    <circle cx="52" cy="18" r="5" fill="#F0E4A8" stroke="#4A5D4A" stroke-width="1.2"/>
+  </g>
+  
+  <!-- Texte Meditora -->
+  <text x="100" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="600" fill="#5A4A7A">
+    Meditora
+  </text>
+  
+  <!-- Ligne décorative -->
+  <line x1="60" y1="155" x2="140" y2="155" stroke="#A8C8A8" stroke-width="2"/>
+  
+  <!-- Texte Digital -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#4A5D4A" letter-spacing="5">
+    D I G I T A L
+  </text>
+  
+  <!-- Slogan -->
+  <text x="100" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-style="italic" fill="#7A6A8A">
+    L'IA au service de l'humain
+  </text>
+</svg>
