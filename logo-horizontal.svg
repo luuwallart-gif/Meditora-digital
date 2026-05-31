@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8C8A8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8B8E0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Feuille stylisée -->
+  <g transform="translate(10, 15)">
+    <path d="M25 5 Q5 25 10 45 Q15 50 25 48 Q45 45 45 20 Q40 5 25 5 Z" 
+          fill="url(#leafGradient)" />
+    <path d="M25 8 Q22 25 18 45" 
+          stroke="#4A5D4A" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Point digital (soleil/pixel) -->
+    <circle cx="42" cy="15" r="4" fill="#F0E4A8" stroke="#4A5D4A" stroke-width="1"/>
+  </g>
+  
+  <!-- Texte Meditora -->
+  <text x="75" y="42" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#5A4A7A">
+    Meditora
+  </text>
+  
+  <!-- Texte Digital -->
+  <text x="75" y="62" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#4A5D4A" letter-spacing="3">
+    D I G I T A L
+  </text>
+</svg>
