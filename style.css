@@ -602,4 +602,79 @@ footer {
   .ecommerce-section {
     padding: 2rem 1.5rem;
   }
+
+   /* ===== ENCART DEVIS GRATUIT ===== */
+.devis-cta {
+  margin: 60px auto 40px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.devis-content {
+  background: linear-gradient(135deg, #F5F0E8 0%, #E8DFF0 100%);
+  border-left: 5px solid #5A4A7A;
+  border-radius: 16px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(90, 74, 122, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devis-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(90, 74, 122, 0.18);
+}
+
+.devis-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.devis-content h3 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: #5A4A7A;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.devis-content p {
+  font-size: 1.05rem;
+  color: #4A4A4A;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.devis-content p strong {
+  color: #5A4A7A;
+}
+
+.btn-devis {
+  display: inline-block;
+  background: linear-gradient(135deg, #5A4A7A 0%, #7A6A9A 100%);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(90, 74, 122, 0.3);
+}
+
+.btn-devis:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(90, 74, 122, 0.45);
+  background: linear-gradient(135deg, #4A3A6A 0%, #6A5A8A 100%);
+}
+
+@media (max-width: 600px) {
+  .devis-content {
+    padding: 30px 25px;
+  }
+  .devis-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
 }
